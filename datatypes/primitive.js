@@ -16,7 +16,8 @@ const userId = null;
 console.log(typeof userId); // object
 
 /* 
-5 primitive types of data in js:
+
+5 primitive types of data in js: aka call by value
 
 Number -> any type of number.
 BigInt --
