@@ -25,3 +25,8 @@ console.log(typeof numbers); // object
 
 // sort - sort in ascending order
 console.log(numbers.sort((a, b) => a-b));
+
+// array type checking
+const arr = [1, 2, 3];
+console.log(Array.isArray(arr)); // returns either true or false
+
