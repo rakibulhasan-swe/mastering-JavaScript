@@ -30,3 +30,15 @@ console.log(numbers.sort((a, b) => a-b));
 const arr = [1, 2, 3];
 console.log(Array.isArray(arr)); // returns either true or false
 
+
+// iterate through arrays - for of loop
+const arrayA = [1, 2, 3, 4, 5, 6, 7];
+for(const num of arrayA){
+    console.log(num);
+}
+
+// we can also iterate throgh the array by using for in loop
+const arrayB = [1, 2, 3, 4, 5];
+for (const key in arrayB) {
+    console.log(arrayB[key]);
+}

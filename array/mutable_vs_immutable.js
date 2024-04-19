@@ -73,7 +73,7 @@ const newArr = [...num3, 23, 21]; // here num3 and newArr does not refers same r
 newArr.push(10); // wont occur change in num3 array
 console.log(newArr);
 
-// Note: if there is nested arrays - it will still shares same reference (only the nested array not outer array);
+// Note: if there is nested arrays/objects - it will still shares same reference (only the nested array not outer array);
 const f = [2, 3, 5];
 f.push([1, 2, 3]);
 const g = [...f];
