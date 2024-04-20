@@ -6,6 +6,30 @@ const c = a.concat(b);
 // console.log(c); // returns a new array. doesnot effect main array
 
 
+// Array.isArray - is method to check array or not - returns true/false
+console.log(Array.isArray(a)); // true
+console.log(Array.isArray("Rakib")); // false
+
+
+// includes - returns true/false after searching for a specific value
+const search = [1, 21, 12, 34, 54, 1, 23];
+const res = search.includes(34);
+console.log(res); // true
+
+
+// join - returns a string after concatenating all the elements of an array
+const myArr = ["H", "E", "L", "L", "O"];
+// const myStr = myArr.join(); // H,E,L,L,O
+const myStr = myArr.join(""); // HELLO
+// console.log(myStr);
+
+
+// reverse - reverses the elements of an array. it mutates/changes the main array.
+const arrRev = [1, 2, 3, 4];
+arrRev.reverse();
+console.log(arrRev);
+
+
 // for Each method - loop throgh the original array - it returns undefined
 const coding = ["js", "c++", "java", "Go", "rust"];
 coding.forEach((item) => console.log(item));
@@ -34,4 +58,10 @@ myNums.forEach((n) => {
 const numFind = [1, 23, 12, 23, 12, 12, 11];
 const result = numFind.find((val) => val==12);
 console.log(result);
+
+
+// map - returns a new array after performing specific operations
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+const add10 = numbers.map((val) => val+10);
+console.log(add10);
 
