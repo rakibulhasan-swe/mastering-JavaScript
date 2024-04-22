@@ -52,7 +52,7 @@ const regularUser = {
 }
 
 console.log(regularUser.fullName.userFullName.firstName);
-// ? -> optional chaining - if the value can not exist then it will not crash.
+// ? -> optional chaining - if the value can not exist then it will not crash. rather return undefine
 console.log(regularUser?.fullName?.userFullName?.lastName);
 
 
@@ -80,6 +80,11 @@ const course = {
 
 const {courseName, price, instructor} = course;
 console.log(price, courseName, instructor);
+
+// iterate through a ohject
+for (const key in course) {
+    console.log(course[key]);
+}
 
 
 
