@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Color Changer</title>
+    <style>
+        .parent{
+            margin: 5rem;
+        }
+        .btn{
+            padding: 8px 24px;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn-stop{
+            background-color: orange;
+        }
+        .btn-start{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Bg Color Changer</h1>
+        <button class="btn btn-start" id="start">Start</button>
+        <button class="btn btn-stop" id="stop">Stop</button>
+    </div>
+
+    <script>
+        const start = document.getElementById("start");
+        const stop = document.getElementById("stop");
+        function changeColor(){
+            let hexColor = "#";
+            let hexChar = "0123456789ABCDEF";
+            for (let i = 0; i < 6; i++) {
+                hexColor += hexChar[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.backgroundColor = hexColor;
+        }
+
+        let intervalId;
+        start.addEventListener("click", () => {
+            intervalId = setInterval(changeColor, 1500);
+        })
+
+        stop.addEventListener("click", () => {
+            clearInterval(intervalId);
+        })
+
+    </script>
+</body>
+</html>
