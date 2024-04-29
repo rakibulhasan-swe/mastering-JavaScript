@@ -15,3 +15,16 @@ console.log(addTwoNumbers(12, 56));
 
 
 // difference between function expression and function declaration
+
+
+
+// interview type questions --
+function first(){
+    return "First!!!";
+}
+function second(){
+    return "Second!!";
+}
+
+const message = first() && second();
+console.log(message);
