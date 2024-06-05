@@ -36,17 +36,10 @@ coding.forEach((item) => console.log(item));
 
 // coding.forEach((item, idx, arr) => console.log(item, idx, arr));
 
-
-
-// filter - return a new array which met the conditions
-const myNums = [1, 2, 3, 4, 5, 6, 7, 8];
-const filteredNums = myNums.filter((num) => num >= 5);
-// console.log(filteredNums);
-
-
 // foreach act as filter - 
+const myNums1 = [1, 2, 3, 4, 5, 6, 7, 8];
 const newNum = [];
-myNums.forEach((n) => {
+myNums1.forEach((n) => {
     if(n > 5){
         newNum.push(n);
     }
@@ -60,8 +53,38 @@ const result = numFind.find((val) => val==12);
 console.log(result);
 
 
+// filter - returns a new array which met the conditions
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8];
+const filteredNums = myNums.filter((num) => num >= 5);
+// console.log(filteredNums);
+
+
 // map - returns a new array after performing specific operations
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 10];
 const add10 = numbers.map((val) => val+10);
 console.log(add10);
+
+
+
+// slice - 
+// did not change the main array
+// cut a specific portion and returns a array
+const fruits = ['Banana', 'Mango', 'Litchi', 'Jackfruit', 'Dragon'];
+const ans = fruits.slice(2, 5);
+console.log(ans, fruits); 
+
+
+// splice - 
+// change the main array
+// cut a specific portion and returns a array
+const fruits1 = ['Banana', 'Mango', 'Litchi', 'Jackfruit', 'Dragon'];
+const ans1 = fruits1.splice(2, 2);
+console.log(ans1, fruits1); 
+
+
+// for of - same as for loop. diff is syntax
+const numbers2 = [1, 2, 3, 5, 6];
+for(num of numbers2){
+    console.log(num);
+}
 

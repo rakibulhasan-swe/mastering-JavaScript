@@ -13,6 +13,16 @@ function addTwoNumbers(one, two){
 }
 console.log(addTwoNumbers(12, 56));
 
+// function expression
+const hello = function () {
+    console.log("Hello There");
+}
+
+// named function expression
+const hello1 = function hello() {
+    console.log("Named function expression");
+}
+
 
 // difference between function expression and function declaration
 
