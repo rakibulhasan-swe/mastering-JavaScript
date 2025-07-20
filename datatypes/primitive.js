@@ -3,6 +3,12 @@
 let phoneNumber = 1749006471;
 console.log(typeof phoneNumber); // number
 
+// NaN - not a number
+let notANumber = 0/0;
+console.log(notANumber);
+
+console.log(typeof NaN);
+
 let name = "Rakib";
 console.log(typeof(name)); // string
 
@@ -20,6 +26,7 @@ console.log(typeof userId); // object
 5 primitive types of data in js: aka call by value
 
 Number -> any type of number.
+NaN -> Not a number.
 BigInt --
 String -> any type of values inside double quotes or single quotes.
 Boolean -> either true or false.

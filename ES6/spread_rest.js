@@ -16,3 +16,4 @@ function sum(...rest){
     
 }
 console.log(sum(10, 21, 2, 12));
+
