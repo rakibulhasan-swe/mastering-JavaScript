@@ -1,6 +1,6 @@
 console.log(null > 0); // returns false
 console.log(null == 0); // returns false 
-console.log(null >= 0); // returns true. bcz == and comaprison works differently. in comparison null converts to 0.
+console.log(null >= 0); // returns true. bcz == and comparison works differently. in comparison null converts to 0.
 
 
 console.log(undefined == 0);
