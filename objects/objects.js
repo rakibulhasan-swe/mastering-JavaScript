@@ -40,6 +40,13 @@ user.email = "nayeem@gmail.com";
 
 user.greeting();
 
+const tinderUser = new Object();
+tinderUser.id = "12abc3";
+tinderUser.name = "saim";
+tinderUser.isLoggedIn = false;
+
+console.log(tinderUser);
+
 
 const regularUser = {
     email: "user@gmail.com",

@@ -5,10 +5,16 @@ const c = a.concat(b);
 
 // console.log(c); // returns a new array. doesnot effect main array
 
+const allnumbers = [...a, ...b]; // spread operators
+
 
 // Array.isArray - is method to check array or not - returns true/false
 console.log(Array.isArray(a)); // true
 console.log(Array.isArray("Rakib")); // false
+
+console.log(Array.from("Rakib")); // converts into array
+console.log(Array.from({name: "Rakib"})); // gives empty array [] --
+
 
 
 // includes - returns true/false after searching for a specific value
@@ -68,7 +74,7 @@ console.log(add10);
 
 // slice - 
 // did not change the main array
-// cut a specific portion and returns a array
+// cut a specific portion did not includes last position and returns a array
 const fruits = ['Banana', 'Mango', 'Litchi', 'Jackfruit', 'Dragon'];
 const ans = fruits.slice(2, 5);
 console.log(ans, fruits); 
@@ -76,7 +82,7 @@ console.log(ans, fruits);
 
 // splice - 
 // change the main array
-// cut a specific portion and returns a array
+// cut a specific portion includes last position and returns a array
 const fruits1 = ['Banana', 'Mango', 'Litchi', 'Jackfruit', 'Dragon'];
 const ans1 = fruits1.splice(2, 2);
 console.log(ans1, fruits1); 
