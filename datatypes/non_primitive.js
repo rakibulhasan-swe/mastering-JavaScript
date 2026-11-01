@@ -1,6 +1,8 @@
 // reference type
 // array, objects, functions
 
+const heros = ["Thor", "IronMan", "Captain America", "Antman"];
+
 
 // arrays
 const fruits = ["mango", "lichi", "watermelon", "banana"];

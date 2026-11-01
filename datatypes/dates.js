@@ -11,7 +11,7 @@ console.log(date.toLocaleString());
 console.log(typeof date); // objects
 
 
-let newDate = new Date(2024, 3, 14); // my birthday
+let newDate = new Date(2024, 3, 14);
 console.log(newDate.toDateString());
 
 
@@ -22,4 +22,11 @@ console.log(dates.toLocaleString());
 // timestamp
 const timeStamp = Date.now();
 console.log(timeStamp);
+console.log(newDate.getTime()); // miliseconds
+
+console.log(Math.floor(Date.now()/1000)); // seconds
+
+const dateNew = new Date();
+console.log(dateNew.getMonth());
+console.log(dateNew.getDay());
 

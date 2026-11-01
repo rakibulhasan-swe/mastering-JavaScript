@@ -9,6 +9,8 @@ let universityName = "Southeast University";
 console.log(universityName.charAt(0)); // returned the value of that position
 console.log(universityName.charAt(30)); // returns empty if it is out of range
 
+console.log(universityName.indexOf('U')); // returns the position of that string
+
 
 // concat - joins two strings
 let firstName = "Md. Rakibul", lastName = " Hasan.";
