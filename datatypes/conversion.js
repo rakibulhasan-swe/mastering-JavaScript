@@ -1,10 +1,14 @@
+let value = 33;
+console.log(typeof value); // number
+console.log(typeof(value)); // number
+
 let score = "29abc";
 
-console.log(typeof score);
-console.log(typeof(score));
+console.log(typeof score); // string
+console.log(typeof(score)); // string
 
 let sc = Number(score);
-console.log(typeof(sc));
+console.log(typeof(sc)); // number
 console.log(sc); // NaN
 
 /*
@@ -21,6 +25,8 @@ console.log(booleanIsLoggedIn);
 
 /*
 Either true or false
+    "" -> false
+    "rakib" -> true 
 */
 
 

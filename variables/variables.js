@@ -24,6 +24,12 @@ isTrue = true;
 console.log(isTrue);
 
 
+const accountId = 144567;
+let accountEmail = "rakib73@gmail.com";
+var accountPassword = "12345";
+accountCity = "Joypurhat"; 
+
+
 
 /*
 Notes:
