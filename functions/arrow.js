@@ -2,6 +2,11 @@ const hello = () => {
     console.log("Hello Arrow function");
 }
 
+const addTwo = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(addTwo(3, 7));
+
 // one liner return
 const getValue = () => 5;
 // console.log(getValue());

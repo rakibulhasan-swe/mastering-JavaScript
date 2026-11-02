@@ -13,6 +13,27 @@ function addTwoNumbers(one, two){
 }
 console.log(addTwoNumbers(12, 56));
 
+function loginUserMessage(userName){
+    if(!userName){
+        console.log("Please enter your username!!");
+        return;
+    }
+    return `${userName} just logged in!!`;
+}
+
+const loginMessage = loginUserMessage("Rakib");
+console.log(loginMessage);
+
+
+
+function calculateCartPrice(...value){ // rest operators
+    return value;
+}
+
+console.log(calculateCartPrice(20, 14, 32, 54));
+
+
+
 // function expression
 const hello = function () {
     console.log("Hello There");
