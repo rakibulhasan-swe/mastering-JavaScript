@@ -92,3 +92,24 @@ console.log(price, courseName, instructor);
 for (const key in course) {
     console.log(course[key]);
 }
+
+
+const myCoding = [
+    {
+        languageName: "Javascript",
+        languageFileName: "js"
+    },
+    {
+        languageName: "Java",
+        languageFileName: "java"
+    },
+    {
+        languageName: "C++",
+        languageFileName: "cpp"
+    }
+];
+
+// forEach doesnt return anything by default and doesnt modify the actual/main array.
+myCoding.forEach((item) => {
+    console.log(item?.languageName);
+});

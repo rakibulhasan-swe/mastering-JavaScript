@@ -92,5 +92,34 @@ console.log(ans1, fruits1);
 const numbers2 = [1, 2, 3, 5, 6];
 for(num of numbers2){
     console.log(num);
-}
+} 
+
+// reduce
+const number = [1, 2, 3, 4, 5, 6, 7];
+const mySum = number.reduce((accumulator, currentVal) => accumulator + currentVal, 0);
+console.log(mySum);
+
+
+const shoppingCart = [
+    {
+        itemName: "Js Course",
+        price: 5500
+    },
+    {
+        itemName: "Java Course",
+        price: 5000
+    },
+    {
+        itemName: "C++ Course",
+        price: 7500
+    },
+    {
+        itemName: "App dev Course",
+        price: 9500
+    },
+];
+
+const priceToPay = shoppingCart.reduce((acc, item) => acc + item?.price, 0);
+console.log(priceToPay);
+
 
