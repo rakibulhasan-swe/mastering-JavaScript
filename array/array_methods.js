@@ -75,7 +75,7 @@ console.log(add10);
 // slice - 
 // did not change the main array
 // cut a specific portion did not includes last position and returns a array
-const fruits = ['Banana', 'Mango', 'Litchi', 'Jackfruit', 'Dragon'];
+const fruits = ['Banana', 'Mango', 'Litchi', 'Jackfruit', 'Dragon', "Guava"];
 const ans = fruits.slice(2, 5);
 console.log(ans, fruits); 
 
