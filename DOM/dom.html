@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Model</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        button{
+            padding: 0.8rem 1rem;
+            background-color: black;
+            border: 1px solid gray;
+            border-radius: 0.2rem;
+            font-weight: bold;
+            color: white;
+            margin: 1rem 0;
+        }
+        button:hover{
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM Learning with practicing.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, fuga.</p>
+        <button onclick="changeHeading()">Change Heading</button>
+    </div>
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+    <script src="./dom.js"></script>
+    
+</body>
+</html>
